@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Formulario-Sala1</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Formulario da Sala de Aula</h1>
+        <p class="subtitulo">Informações da sala</p>
+    </header>
+    <main>
+        <section class="pesquisa">
+            <form class="formulario">
+                <h2 class="titulo">Informações do Aluno</h2>
+                <fieldset class="grupo">
+                    <input type="text" class="informacao" name="nome" id="nome" placeholder="Nome do aluno" data-campo="nome" required>
+                    <span>Nome do aluno</span>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <input type="number" class="informacao" name="rgm" id="rgm" placeholder="RGM do Aluno" data-campo="rgm" required>
+                    <span>RGM do Aluno</span>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <label for="nota1"><strong>Primeira nota:</strong></label>
+                    <input type="number" class="informacao" name="nota1"  id="nota1" placeholder="Primeira nota" data-nota="primeira" min="1">
+                    <label for="nota2"><strong>Segunda nota:</strong></label>
+                    <input type="number" class="informacao" name="nota2"  id="nota2" placeholder="Segunda nota" data-nota="segunda">
+                    <div class="areaMedia"><p class="media">Media: </p></div>
+                </fieldset>
+                
+            </form>
+            
+            <div class="botoes">
+                <button class="botao" data-botao="cadastro">Cadastrar</button>
+                <button class="botao" data-botao="exibir">Exibir Lista</button>
+            </div>
+            
+        </section>
+    </main>
+    <aside class="campoExibir esconder">
+        <div class="botoes">
+            <button class="botao" data-botao="apagar">Apagar tudo</button>
+            <button class="botao" data-botao="sair">X</button>
+        </div>
+
+        <div class="informacoes" data-informacoes="itens">
+
+        </div>
+    </aside>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mediaNotas.js"></script>
+    <script src="assets/js/campos.js"></script>
+    <script src="assets/js/notaAluno.js"></script>
+    <script src="assets/js/localstore.js"></script>
+</body>
+</html>
